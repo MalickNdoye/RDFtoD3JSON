@@ -16,7 +16,7 @@ public class Main {
         //PARSER
         CommandLine commandLine ;
         Option option_f = Option.builder("f").argName("input").hasArgs().valueSeparator(' ')
-                .desc("Fichier à convertir").optionalArg(true).build();
+                .desc("Fichier(s) à convertir. Plusieurs fichiers en simultanés acceptés.").optionalArg(true).build();
         Option option_o = Option.builder("o").argName("output").hasArg()
                 .desc("Répertoire de sortie").optionalArg(true).build();
         Option option_h = Option.builder("h").argName("help").longOpt("help")
